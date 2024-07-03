@@ -55,6 +55,7 @@ function displayUniversities(universities) {
         const card = document.createElement('div');
         card.className = 'card';
         card.innerHTML = `
+            <img src="images/u1.jpeg" alt="${university.name} Image" style="width:100%; height:auto;">
             <h3>${university.name}</h3>
             <p><a href="${university.web_pages[0]}" target="_blank">Visit Website</a></p>
             <button onclick="downloadCard('${university.name}', '${university.web_pages[0]}')">Download</button>
