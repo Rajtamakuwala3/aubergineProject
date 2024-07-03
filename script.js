@@ -2,7 +2,7 @@ let allUniversities = [];
 let filteredUniversities = [];
 
 async function fetchUniversities() {
-    const country = document.getElementById('country-input').value;
+    const country = document.getElementById('country-input').value.trim();
     if (country) {
         try {
             const response = await fetch(`http://universities.hipolabs.com/search?country=${country}`);
