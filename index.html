@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>University Search</h1>
+    <div>
+        <input type="text" id="country-input" placeholder="Enter country" oninput="fetchUniversities()">
+        <select id="province-dropdown" onchange="filterByProvince()">
+            <option value="">Select Province</option>
+        </select>
+    </div>
+    <div id="university-cards"></div>
+    <script src="js/canvas-to-blob.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
